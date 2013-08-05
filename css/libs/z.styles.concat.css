@@ -805,12 +805,13 @@ textarea {
 #main{
   width: 90%;
   margin: 0 auto;
-  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
 }
-
+.sans{
+  font-weight: lighter !important;
+}
 #main > h1{
   width:58.33333333333333%;
-  color: #F03838;
+  color: #2c3e50;
   font-size: 2.25em;
   line-height: 1;
   position: absolute;
@@ -831,9 +832,15 @@ textarea {
   float:  left;
   margin-right: 30px;
 }
-#main > nav > ul li a {
+a {
   text-decoration: none;
+  color: #2c3e50;
+}
+
+a:hover{
   color: #F03838;
+  text-decoration: underline;
+
 }
 
 #background {
@@ -841,5 +848,26 @@ textarea {
   width: 100%;
   z-index: -1;
   position: absolute;
-  background-size: cover;
+}
+#work{
+  display: none;
+}
+#work > ol {
+  font-size:  1.5em;
+  font-weight: bold;
+  list-style: none;
+  position: absolute;
+  top: 8%;
+  padding: 0;
+  line-height: 1.75;
+}
+#detail{
+  position:absolute;
+  top: 2000px;
+  background-color: white;
+  display: none;
+}
+#detail div{
+  width: 90%;
+  margin: 0 auto;
 }
