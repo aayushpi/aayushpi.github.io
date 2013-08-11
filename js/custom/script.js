@@ -13,7 +13,7 @@
   // $('#detail').css('top', height + 10);
   // Code to change background on Hover
   // $('#main > nav > ul li a').mouseover(function(){
-  $('li a').mouseover(function(){
+  $('#main li a, #work a').mouseover(function(){
     var url = "white";
     if($(this).data('bg')){
       var bg = $(this).data('bg');
@@ -23,7 +23,7 @@
     //   url = "white";
     // }
       $('#background').fadeOut(500, function(){
-        $('#background').css({'background' : url, 'background-size' : 'cover'});
+        $('#background').css({'background' : url, 'background-size' : 'cover', 'background-position' : 'fixed'});
         $('#background').fadeIn(1000);
       });
   });
@@ -46,34 +46,26 @@
   });
 
   //Code to Reveal Work Detail
-  $('#work > ol li a').click(function(){
+  aayush.reveal = function(){
+    console.log("sup");
     $('#background').css('background', "white");
     $('body').css('overflow','visible');
     // $('#detail div').html(data.sample);
     $('#detail').fadeIn(0);
-    $('#detail').animate({
-      top: 20
-    }, 500, "linear");
-  });
+    // $('#detail').animate({
+    //   top: 60
+    // }, 500, "linear");
+  };
 
-   
- 
   // Jumper
- 
   $('#close ul li').click(function(){
     var jumper = $(this).data('id');
-    if (jumper === "close"){
-     $('#detail').animate({
-       scrollTop: $('html').offset().top,
-       top: 2000
-     }, 500, "linear", function(){$('body').css('overflow','hidden');});
-    }else{
+     console.log("sup");
     var jump = '*[data-section="' + jumper + '"]';
     $('html,body').animate({
         scrollTop: $(jump).offset().top},
         '500', function(){
     });
-    }
   });
 
  
