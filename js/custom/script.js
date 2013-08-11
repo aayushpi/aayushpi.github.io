@@ -13,7 +13,7 @@
   // $('#detail').css('top', height + 10);
   // Code to change background on Hover
   // $('#main > nav > ul li a').mouseover(function(){
-  $('li a').mouseover(function(){
+  $('#main li a, #work a').mouseover(function(){
     var url = "white";
     if($(this).data('bg')){
       var bg = $(this).data('bg');
@@ -23,7 +23,7 @@
     //   url = "white";
     // }
       $('#background').fadeOut(500, function(){
-        $('#background').css({'background' : url, 'background-size' : 'cover'});
+        $('#background').css({'background' : url, 'background-size' : 'cover', 'background-position' : 'fixed'});
         $('#background').fadeIn(1000);
       });
   });

@@ -5,6 +5,10 @@
    ========================================================================== */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;  *behavior: url(boxsizing.htc); }
 
+body{
+  margin: 0;
+}
+
 #main{
   width: 90%;
   margin: 0 auto;
@@ -57,14 +61,22 @@ a:hover{
   display: none;
 }
 #work > ol {
-  font-size:  1.5em;
+  font-size:  1.25em;
   font-weight: bold;
   list-style: none;
   position: absolute;
   top: 8%;
   padding: 0;
-  line-height: 1.75;
+  line-height: 1.5;
 }
+
+#work a {
+  text-transform: uppercase;
+  font-style: italic;
+  color: #F03838;
+  font-size: 1.5em;
+}
+
 #detail{
   position:absolute;
   left: 5%;
@@ -226,6 +238,7 @@ li .sans {
 }
 #close li:last-child{
   border-bottom: none;
+  color: #2c3e50;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -233,16 +246,65 @@ li .sans {
 and (min-width : 320px)
 and (max-width : 700px) {
   #main > h1{
-    width: 74.33333333%;
-    bottom: 10%;
-    font-size: 2em;
+    width: 90%;
+    bottom: 13%;
+    font-size: 1.5em;
   }
   #main > nav > ul > li{
-    margin-right: 70px;
+    margin-right: 20px;
   }
   #main > nav > ul {
     bottom: 5%;
     font-size: 1.5em;
+  }
+
+  #work > ol{
+    top: 0;
+    font-size: 1em;
+  }
+
+  #work li{
+    border-bottom: 1px solid #2c3e50;
+  }
+
+  #close{
+    right: 0;
+    top:0;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0 10px 0;
+  }
+  #close ul{
+    display: block;
+    width:90%;
+    margin: 0 auto;
+  }
+  #close li{
+    border:none;
+    float: left;
+    padding: 0;
+    margin: 10px 20px 0 0;
+  }
+  #close li:last-child {
+    float: right;
+  }
+
+  .inner p, .award, .inner li{
+    font-size: 1.25em;
+  }
+
+  .subhead{
+    font-size: 2.4em;
+  }
+  .inner blockquote{
+    line-height: 1.2;
+    margin-left: 10px;
+    padding-left: 20px;
+    font-size: 1.25em;
+  }
+  #detail h1 {
+    margin: 5px auto 5px auto;
+    line-height: 1.1;
   }
 }
 
