@@ -15,6 +15,13 @@
   <link href="css/custom/style.css" rel="stylesheet" />
   <!-- Optionally use the non-minified CSS for development -->
   <!-- <link href="css/libs/z.styles.concat.css" rel="stylesheet" /> -->
+  <script>
+  if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+     if (document.cookie.indexOf("iphone_redirect=false") === -1) {
+       window.location = 'http://aayushis.in/aayushisin_mobile/';
+      }
+  }
+  </script>
   <script type="text/javascript" src="//use.typekit.net/gfl7ckv.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
