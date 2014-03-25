@@ -32,7 +32,12 @@
   $('#main > nav > ul li a').click(function(){
     if($(this).data('navsection') === "work"){
       var section = "#" + $(this).data('navsection');
-      $(section).fadeIn(250);
+      // $(section).fadeIn(250);
+      var revealer = 500;
+      $( "#work li" ).each(function( index ) {
+        $(this).fadeIn(revealer);
+        revealer += 250;
+      });
     }
     // else if($(this).data('navsection' === "about"){
     //   $('#background').css('background', "white");

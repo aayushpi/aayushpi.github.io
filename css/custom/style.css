@@ -57,9 +57,12 @@ a:hover{
   z-index: -1;
   position: absolute;
 }
-#work{
+#work li{
   display: none;
 }
+/* #work { */
+/*   display: none; */
+/* } */
 #work > ol {
   font-size:  1.25em;
   font-weight: bold;
