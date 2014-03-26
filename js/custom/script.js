@@ -4,12 +4,14 @@
 (function($) {
   $(document).ready(function(){
     var revealer = 500;
+    $('.spinner').delay(150).fadeOut(150,function(){
     $('#main h1').fadeIn(500,function(){
         $( "#main nav li" ).each(function( index ) {
           $(this).fadeIn(revealer);
           revealer += 300;
         });
     });
+  });
   });
 
   var data ={
