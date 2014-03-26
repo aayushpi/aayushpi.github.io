@@ -9,6 +9,10 @@ body{
   margin: 0;
 }
 
+#main h1, #main nav li{
+  display: none;
+}
+
 #main{
   width: 90%;
   margin: 0 auto;

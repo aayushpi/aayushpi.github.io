@@ -2,6 +2,15 @@
  * scripts.js
  */
 (function($) {
+  $(document).ready(function(){
+    var revealer = 500;
+    $('#main h1').fadeIn(500,function(){
+        $( "#main nav li" ).each(function( index ) {
+          $(this).fadeIn(revealer);
+          revealer += 300;
+        });
+    });
+  });
 
   var data ={
     "about" : "<img src='/img/resume.png' />",
