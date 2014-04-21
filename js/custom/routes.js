@@ -71,11 +71,12 @@
     $.get("partials/nike.html", function(data){
       $('#detail').html(data);
       $('#detail').imagesLoaded( function() {
-      $('#loading').animate({'margin-right': 0},500);
-      $('#loading').animate({'margin-top': -2},500,function(){
-      $('#loading').css({'margin-right': 1440, 'margin-top': 0});
-      });
-      $('#loading').stop();
+      $('.spinner').fadeOut(150);
+      // $('#loading').animate({'margin-right': 0},500);
+      // $('#loading').animate({'margin-top': -2},500,function(){
+      // $('#loading').css({'margin-right': 1440, 'margin-top': 0});
+      // });
+      // $('#loading').stop();
       $('body').css('overflow','visible');
       $('#detail').addClass("show");
       $('#close ul li').click(function(){
