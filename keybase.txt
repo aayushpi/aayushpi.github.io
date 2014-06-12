@@ -1,0 +1,66 @@
+==================================================================
+https://keybase.io/aayush
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://aayushis.in
+  * I am aayush (https://keybase.io/aayush) on keybase.
+  * I have a public key with fingerprint D605 BAC3 0531 86EF E2E3  5241 1F02 F737 7582 FB59
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "d605bac3053186efe2e352411f02f7377582fb59",
+            "host": "keybase.io",
+            "key_id": "1f02f7377582fb59",
+            "uid": "4e773943c7474bd12aec8852fdad2300",
+            "username": "aayush"
+        },
+        "service": {
+            "hostname": "aayushis.in",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1402609999,
+    "expire_in": 157680000,
+    "prev": "330f00223ab99b72483c7620c21f6b125fccae0179aa1ea7ce6a73d6c46aef68",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.22
+Comment: https://keybase.io/crypto
+
+yMHnAnicbZFrSBRtFMfXa7gZBpLQJoEjQaHJM7fLTrhBr10+vLVZqUni9szMM7vj
+ZWbb2d3yXTbYj2UEhYmuprQVglDaRmSFspRlIGEU5PshTCRWJRSKpAuKPiv1Ieh8
+GZ7/+f9/Zw5ndFOGxZo2JzoKBvLK6bTxxGLAcjxa5AwRkqG0EGKIaETrH1XT3cjn
+9Wm6nxAJhQOsBGUasDQpcEhFFKJZiiFJFVAqT/M8K1CqxNqJUsJjmKkExkjQRGWa
+gTX8cGkKVv/iD6w3GMTztJ2hZZ7hGUkhKYhkQWApVYEKRQOQMprIp8NmhN0QtgRM
+DxEuJbAW1GSshdYH/9HXzDJNx0Gvz/AbstGEGx6/3yumcv4Wb8p4FkmuXwiXpOkK
+XhoHgshnaoZOiCR2yn4txSQZQHHAjquUQOe8mg+5MFwkWZ4TAK7UGBTESJoGKgAU
+RUPJbpd4ihHwUhwFZIpUOYmkWFWWIQIkb4eQRJCXEQd5WuFkhoNI5QQ830RndIMQ
+afyb0I2RpubWoT/gQ0T4aaIu05JmtWRnpafOZrHmbP59zK+HNqzYTnWDxbaOn8aR
+Yf7Cw2OFz3/caC9Yqbg6PnE4elvur8pv3lf/1jnlWfjsdthO/pef2MOQxR7H3BVl
+sbf41fn5yg/bl4cmekeTlybfdCcid522zgfV0d1Dyevk1l0Nd5aSwR3jw98ikeDU
+yLuuLz3x1//GzKxKb0dedcfgQv9IOLTMxOI1257UuqaTqycOdDdKj2vYyYHVvpi9
+8OV8Q3rlP/eP1lYUzc1ujIq55SX1N+PPMmpndjqs8bi19f1M12ydZ384e7mk7PKE
+Y6yrdar99IuLPf+3FUwvVN2zDebELEuPcrmD0YGoq3Mmdu1TPBpp+rilL9OpjyW+
+S3tv2dYAOn8WdA==
+=JQ7W
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/aayush
+
+==================================================================
+
