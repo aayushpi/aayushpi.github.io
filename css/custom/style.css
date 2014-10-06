@@ -11,7 +11,16 @@
   text-align: center;
   font-size: 10px;
 }
-
+.secret {
+    display: inline-block;
+    margin-left: 20px;
+    color: white;
+    background-color: #f03838;
+    padding: 4px;
+    font-size: 0.65em;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
 .spinner > div {
   background-color: #F03838;
   height: 100%;
@@ -114,10 +123,9 @@ a:hover{
 }
 #work li{
   display: none;
+  text-transform: uppercase;
+  font-size: 1em;
 }
-/* #work { */
-/*   display: none; */
-/* } */
 #work > ol {
   font-size:  1.25em;
   font-weight: bold;
@@ -128,11 +136,13 @@ a:hover{
   line-height: 1.5;
 }
 
+
+
 #work a {
   text-transform: uppercase;
   font-style: italic;
   color: #F03838;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 #detail{
