@@ -2,6 +2,7 @@
  * Router
  *
  * routes for project details
+ "donext": "donext", 
 ************************************
 /                                  */
 
@@ -11,12 +12,11 @@
 
   var AppRouter = Backbone.Router.extend({
     routes: {
-      "piq": "piq", 
-      "donext": "donext", 
-      "tsi": "tsi", 
-      "a4j": "a4j", 
-      "vwlive": "vwlive", 
-      "nike": "nike", 
+      "piq": "piq",
+      "tsi": "tsi",
+      "a4j": "a4j",
+      "vwlive": "vwlive",
+      "nike": "nike",
       "about": "about",
       "currently": "currently",
       "suave": "suave",
@@ -142,7 +142,7 @@
       });
     });
   });
- 
+
  app_router.on('route:tsi', function() {
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/tsi.html", function(data){
@@ -264,7 +264,7 @@
     });
   });
 
- 
+
   app_router.on('route:defaultRoute', function() {
     $('#detail').html("");
     if ($('#detail').hasClass("show")) $('#detail').removeClass("show");
