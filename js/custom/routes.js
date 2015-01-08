@@ -2,7 +2,7 @@
  * Router
  *
  * routes for project details
- "donext": "donext", 
+ "donext": "donext",
 ************************************
 /                                  */
 
@@ -14,6 +14,7 @@
     routes: {
       "piq": "piq",
       "tsi": "tsi",
+      "today": "donext",
       "a4j": "a4j",
       "vwlive": "vwlive",
       "nike": "nike",
