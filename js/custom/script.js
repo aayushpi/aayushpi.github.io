@@ -59,9 +59,12 @@
     }
     
   $('.mobileback').click(function(){
-    $( "#work li" ).each(function() {
-      $(this).fadeOut(100);
-    });
+    var revealer = 500;
+    // $( "#work li" ).each(function() {
+    //   $(this).fadeOut(revealer);
+    //   revealer -= 50;
+    // });
+    $('#work li').fadeOut(0);
     $('.mobileback').fadeOut(100,function(){
       $('#main > h1').fadeIn(100); 
       $('#main > nav > ul').fadeIn(100);
