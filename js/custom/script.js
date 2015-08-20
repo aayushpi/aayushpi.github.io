@@ -42,6 +42,13 @@
   //Code to Reveal Section
   $('#main > nav > ul li a').click(function(){
     if($(this).data('navsection') === "work"){
+      if($(this).data('navsection') === "work"){
+      if(window.innerWidth <700){
+        $('#main > h1').fadeOut(100);
+        $('#main > nav > ul').fadeOut(100,function(){
+          $('.mobileback').fadeIn(100);
+        });
+      }}
       var section = "#" + $(this).data('navsection');
       // $(section).fadeIn(250);
       var revealer = 500;
@@ -50,6 +57,18 @@
         revealer += 250;
       });
     }
+    
+  $('.mobileback').click(function(){
+    $( "#work li" ).each(function() {
+      $(this).fadeOut(100);
+    });
+    $('.mobileback').fadeOut(100,function(){
+      $('#main > h1').fadeIn(100); 
+      $('#main > nav > ul').fadeIn(100);
+    });
+  });
+
+
     // else if($(this).data('navsection' === "about"){
     //   $('#background').css('background', "white");
     //   $('body').css('overflow','visible');
@@ -82,6 +101,10 @@
         scrollTop: $(jump).offset().top},
         '500', function(){
     });
+  });
+  $('.mobileclose a').click(function(){
+    $('#detail').css('margin-top','1500');
+    $('#detail').html('');
   });
 
  

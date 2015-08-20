@@ -15,6 +15,8 @@
   <link href="css/custom/style.css" rel="stylesheet" />
   <!-- Optionally use the non-minified CSS for development -->
   <!-- <link href="css/libs/z.styles.concat.css" rel="stylesheet" /> -->
+  <!-- MOBILE REDIRECT
+
   <script>
   if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
      if (document.cookie.indexOf("iphone_redirect=false") === -1) {
@@ -22,24 +24,33 @@
       }
   }
   </script>
+  
+  
 
-  <!-- <script type="text/javascript" src="//use.typekit.net/gfl7ckv.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
+  -->
+
+  <script type="text/javascript" src="//use.typekit.net/gfl7ckv.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
 <!-- NEW TYPEKIT COMES HERE -->
+<!-- <script src="//use.typekit.net/qco7lhm.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
- 
+-->
+<!-- 
 <script src="//use.typekit.net/gfl7ckv.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
- 
+ -->
   <!-- Optionally use Modernizr without Respond.js -->
   <!-- <script src="js/vendor/modernizr-2.6.2.js"></script> -->
+  <!--      
       <script type="text/javascript">
       window.heap=window.heap||[],heap.load=function(t,e){window.heap.appid=t,window.heap.config=e;var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+t+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(t){return function(){heap.push([t].concat(Array.prototype.slice.call(arguments,0)))}},p=["clearEventProperties","identify","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
       heap.load("2636073837");
     </script>
+-->
 </head>
 <body>
 <div id="background">
@@ -59,30 +70,34 @@
     <ul>
       <li><a data-navsection="about" href="#about" data-bg="about.jpg">About</a></li>
       <li><a href="#" data-bg="work.jpg" data-navsection="work">Work</a></li>
-      <li><a href="https://twitter.com/aayushisreading">Currently  <img width="10px" style="display:inline-block;" src="./img/external.png"></a></li>
+      <!-- <li><a href="https://twitter.com/aayushisreading">Currently  <img width="10px" style="display:inline-block;" src="./img/external.png"></a></li> -->
       <!-- <li><a href="http://blog.aayushis.in">Blog</a></li> -->
       <li><a href="mailto:contact@aayushis.in">Email  <img width="10px" style="display:inline-block;" src="./img/external.png"></a></li>
       <li><a href="https://twitter.com/aayush">Twitter  <img width="10px" style="display:inline-block;" src="./img/external.png"></a></li>
     </ul>
+    <div class="mobileback">
+  <a href="#" class="mobilebacklink">Back</a>
+  </div>
   </nav>
   <div class="navsection" id="work">
     <ol class="sans">
-      <li>Product Design</li>
+      <li class="subsection">Product Design</li>
       <!-- <li><a href="#donext"><span style="text&#45;transform: none">OnMyWay</span>: Ride Sharing for the rest of us</a><span class="secret">Ongoing</notes></li> -->
       <li><a href="#today"><span style="text-transform: none">DoNext</span>: Messaging with intent for <span style="text-transform: none">iOS</span></a></li>
       <li><a href="#piq" data-bg="piq.jpg" data-deets="piq"><span style="text-transform: none">piq</span>: The Next Generation of Jukeboxes</a></li>
-      <li>Communication Design</li>
+      <li class="subsection">Communication Design</li>
       <li><a href="#a4j" data-bg="a4j.jpg"><span style="text-transform: none">anything4jetta</span>: The Original Template for Twitter Campaigns</a></li>
         <li><a href="#vwlive" data-bg="vwlive.jpg"><span style="text-transform: none">Volkswagen LIVE</span>: Minority Report comes for Cricket</a></li>
           <li><a href="#tsi" data-bg="tsi.jpg"><span style="text-transform: none">Volkswagen Jetta</span>: A Test-Drive on YouTube</a></li>
-      <li>Concept Work</li>
+      <li class="subsection">Concept Work</li>
       <li><a href="#nike" data-bg="nike.jpg">Nike: Powered by Pride</a></li>
       <li><a href="#suave">suave: Save The Shower</a></li>
-      <li><a target="_blank" href="http://jakkur.com/eic/">99% Invisible (Not the Podcast) <img width="10px" style="display:inline-block;padding-bottom: 18px;" src="./img/external.png"></a></li>
+      <!-- <li><a target="_blank" href="http://jakkur.com/eic/">99% Invisible (Not the Podcast) <img width="10px" style="display:inline-block;padding-bottom: 18px;" src="./img/external.png"></a></li> -->
     </ol>
   </div>
 </div>
   <div id="detail">
+  
   </div>
 
 
