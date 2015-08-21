@@ -446,6 +446,11 @@ nav > ul li a img {
     width: 90%;
     padding: 10px 0 40px 0;
 }
+.inner img{
+    width: 100% !important;
+    float: none !important;
+    padding: 0 !important;
+}
 .mobileback{
     position: absolute;
     bottom: 3%;

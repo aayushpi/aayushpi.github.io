@@ -15,6 +15,7 @@
       "piq": "piq",
       "tsi": "tsi",
       "today": "donext",
+      "intro": "intro",
       "a4j": "a4j",
       "vwlive": "vwlive",
       "nike": "nike",
@@ -68,6 +69,31 @@
       });
     });
   });
+
+  app_router.on('route:intro', function() {
+    $('#loading').animate({'margin-right':0},10000);
+    $.get("partials/intro.html", function(data){
+      $('#detail').html(data);
+      $('#detail').imagesLoaded( function() {
+      $('#loading').animate({'margin-right': 0},500);
+      $('#loading').animate({'margin-top': -2},500,function(){
+      $('#loading').css({'margin-right': 1440, 'margin-top': 0});
+      });
+      $('#loading').stop();
+      $('body').css('overflow','visible');
+      $('#detail').addClass("show");
+      $('#close ul li').click(function(){
+        var jumper = $(this).data('id');
+        var jump = '*[data-section="' + jumper + '"]';
+        $('html,body').animate({
+          scrollTop: $(jump).offset().top},
+          '300', function(){
+        });
+      });
+      });
+    });
+  });
+
 
   app_router.on('route:donext', function() {
     $('#loading').animate({'margin-right':0},10000);
