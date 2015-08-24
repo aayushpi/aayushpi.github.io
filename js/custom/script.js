@@ -3,6 +3,9 @@
  */
 (function($) {
   $(window).load(function(){
+    $(function() {
+      FastClick.attach(document.body);
+    });
     var revealer = 500;
     $('.spinner').delay(150).fadeOut(150,function(){
     $('#main h1').fadeIn(500,function(){
