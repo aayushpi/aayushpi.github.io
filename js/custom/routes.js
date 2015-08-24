@@ -30,7 +30,7 @@
   app_router.on('route:suave', function() {
       $.get("partials/suave.html", function(data){
         $('#detail').html(data);
-        ga('send', 'event', 'page', 'click', 'suave');
+        mixpanel.track("Portfolio: Suave");
         $('#detail').imagesLoaded( function() {
         console.log("We're on!")
         $('body').css('overflow','visible');
@@ -51,7 +51,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/piq.html", function(data){
       $('#detail').html(data);
-      ga('send', 'event', 'page', 'click', 'piq');
+      mixpanel.track("Portfolio: piq");
       $('#detail').imagesLoaded( function() {
       $('#loading').animate({'margin-right': 0},500);
       $('#loading').animate({'margin-top': -2},500,function(){
@@ -76,7 +76,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/intro.html", function(data){
       $('#detail').html(data);
-      ga('send', 'event', 'page', 'click', 'intro');
+      mixpanel.track("Portfolio: Intro");
       $('#detail').imagesLoaded( function() {
       $('#loading').animate({'margin-right': 0},500);
       $('#loading').animate({'margin-top': -2},500,function(){
@@ -102,7 +102,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/donext.html", function(data){
       $('#detail').html(data);
-      ga('send', 'event', 'page', 'click', 'donext');
+      mixpanel.track("Portfolio: DoNext");
       $('#detail').imagesLoaded( function() {
       $('#loading').animate({'margin-right': 0},500);
       $('#loading').animate({'margin-top': -2},500,function(){
@@ -128,7 +128,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/nike.html", function(data){
       $('#detail').html(data);
-      ga('send', 'event', 'page', 'click', 'nike');
+      mixpanel.track("Portfolio: Nike");
       $('#detail').imagesLoaded( function() {
       $('.spinner').fadeOut(150);
       // $('#loading').animate({'margin-right': 0},500);
@@ -155,7 +155,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/vwlive.html", function(data){
       $('#detail').html(data);
-      ga('send', 'event', 'page', 'click', 'vwlive');
+      mixpanel.track("Portfolio: VW Live");
       $('#detail').imagesLoaded( function() {
       $('#loading').animate({'margin-right': 0},500);
       $('#loading').animate({'margin-top': -2},500,function(){
@@ -180,7 +180,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/tsi.html", function(data){
       $('#detail').html(data);
-      ga('send', 'event', 'page', 'click', 'tsi');
+      mixpanel.track("Portfolio: TSI Test Drive");
       $('#detail').imagesLoaded( function() {
       $('#loading').animate({'margin-right': 0},500);
       $('#loading').animate({'margin-top': -2},500,function(){
@@ -205,7 +205,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/a4j.html", function(data){
       $('#detail').html(data);
-      ga('send', 'event', 'page', 'click', 'a4j');
+      mixpanel.track("Portfolio: anything4jetta");
       $('#detail').imagesLoaded( function() {
       $('#loading').animate({'margin-right': 0},500);
       $('#loading').animate({'margin-top': -2},500,function(){
@@ -230,7 +230,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/suave.html", function(data){
       $('#detail').html(data);
-      ga('send', 'event', 'page', 'click', 'suave');
+      mixpanel.track("Portfolio: Suave");
       $('#detail').imagesLoaded( function() {
       $('#loading').animate({'margin-right': 0},500);
       $('#loading').animate({'margin-top': -2},500,function(){
@@ -256,7 +256,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/about.html", function(data){
       $('#detail').html(data);
-      ga('send', 'event', 'page', 'click', 'about');
+      mixpanel.track("About");
       $('#detail').imagesLoaded( function() {
       $('#loading').animate({'margin-right': 0},500);
       $('#loading').animate({'margin-top': -2},500,function(){
@@ -281,7 +281,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/currently.html", function(data){
       $('#detail').html(data);
-      ga('send', 'event', 'page', 'click', 'currently');
+      mixpanel.track("Portfolio: Currently");
       $('#detail').imagesLoaded( function() {
       $('#loading').animate({'margin-right': 0},500);
       $('#loading').animate({'margin-top': -2},500,function(){
