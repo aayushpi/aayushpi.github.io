@@ -226,30 +226,30 @@
     });
   });
 
-   app_router.on('route:suave', function() {
-    $('#loading').animate({'margin-right':0},10000);
-    $.get("partials/suave.html", function(data){
-      $('#detail').html(data);
-      mixpanel.track("Portfolio: Suave");
-      $('#detail').imagesLoaded( function() {
-      $('#loading').animate({'margin-right': 0},500);
-      $('#loading').animate({'margin-top': -2},500,function(){
-      $('#loading').css({'margin-right': 1440, 'margin-top': 0});
-      });
-      $('#loading').stop();
-      $('body').css('overflow','visible');
-      $('#detail').addClass("show");
-      $('#close ul li').click(function(){
-        var jumper = $(this).data('id');
-        var jump = '*[data-section="' + jumper + '"]';
-        $('html,body').animate({
-          scrollTop: $(jump).offset().top},
-          '300', function(){
-        });
-      });
-      });
-    });
-  });
+  //  app_router.on('route:suave', function() {
+  //   $('#loading').animate({'margin-right':0},10000);
+  //   $.get("partials/suave.html", function(data){
+  //     $('#detail').html(data);
+  //     mixpanel.track("Portfolio: Suave");
+  //     $('#detail').imagesLoaded( function() {
+  //     $('#loading').animate({'margin-right': 0},500);
+  //     $('#loading').animate({'margin-top': -2},500,function(){
+  //     $('#loading').css({'margin-right': 1440, 'margin-top': 0});
+  //     });
+  //     $('#loading').stop();
+  //     $('body').css('overflow','visible');
+  //     $('#detail').addClass("show");
+  //     $('#close ul li').click(function(){
+  //       var jumper = $(this).data('id');
+  //       var jump = '*[data-section="' + jumper + '"]';
+  //       $('html,body').animate({
+  //         scrollTop: $(jump).offset().top},
+  //         '300', function(){
+  //       });
+  //     });
+  //     });
+  //   });
+  // });
 
 
  app_router.on('route:about', function() {
