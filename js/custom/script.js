@@ -13,6 +13,10 @@
           $(this).fadeIn(revealer);
           revealer += 300;
         });
+    $('#background').fadeOut(500, function(){
+        $('#background').css({'background' : "url('./img/bg/about.jpg')", 'background-size' : 'cover', 'background-position' : 'fixed'});
+        $('#background').fadeIn(1000);
+    });
     });
   });
   });
