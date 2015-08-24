@@ -11,6 +11,12 @@
   text-align: center;
   font-size: 10px;
 }
+.subsection {
+    margin-top: 20px;
+  }
+  .subsection:first-child{
+    margin-top:0;
+  }
 .secret {
     display: inline-block;
     margin-left: 20px;
@@ -384,9 +390,7 @@ nav > ul li a img {
   /*#work li{
     border-bottom: 1px solid #2c3e50;
   }*/
- .subsection {
-    margin-top: 15px;
-}
+
 
   #close{
     right: 0;
@@ -455,6 +459,9 @@ nav > ul li a img {
     position: absolute;
     bottom: 3%;
     width: 90%;
+}
+#work a{
+  font-size: 1.1em;
 }
 .mobilebacklink{
   display: block;
