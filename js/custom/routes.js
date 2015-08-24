@@ -30,6 +30,7 @@
   app_router.on('route:suave', function() {
       $.get("partials/suave.html", function(data){
         $('#detail').html(data);
+        ga('send', 'event', 'page', 'click', 'suave');
         $('#detail').imagesLoaded( function() {
         console.log("We're on!")
         $('body').css('overflow','visible');
@@ -50,6 +51,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/piq.html", function(data){
       $('#detail').html(data);
+      ga('send', 'event', 'page', 'click', 'piq');
       $('#detail').imagesLoaded( function() {
       $('#loading').animate({'margin-right': 0},500);
       $('#loading').animate({'margin-top': -2},500,function(){
@@ -74,6 +76,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/intro.html", function(data){
       $('#detail').html(data);
+      ga('send', 'event', 'page', 'click', 'intro');
       $('#detail').imagesLoaded( function() {
       $('#loading').animate({'margin-right': 0},500);
       $('#loading').animate({'margin-top': -2},500,function(){
@@ -99,6 +102,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/donext.html", function(data){
       $('#detail').html(data);
+      ga('send', 'event', 'page', 'click', 'donext');
       $('#detail').imagesLoaded( function() {
       $('#loading').animate({'margin-right': 0},500);
       $('#loading').animate({'margin-top': -2},500,function(){
@@ -124,6 +128,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/nike.html", function(data){
       $('#detail').html(data);
+      ga('send', 'event', 'page', 'click', 'nike');
       $('#detail').imagesLoaded( function() {
       $('.spinner').fadeOut(150);
       // $('#loading').animate({'margin-right': 0},500);
@@ -150,6 +155,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/vwlive.html", function(data){
       $('#detail').html(data);
+      ga('send', 'event', 'page', 'click', 'vwlive');
       $('#detail').imagesLoaded( function() {
       $('#loading').animate({'margin-right': 0},500);
       $('#loading').animate({'margin-top': -2},500,function(){
@@ -174,6 +180,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/tsi.html", function(data){
       $('#detail').html(data);
+      ga('send', 'event', 'page', 'click', 'tsi');
       $('#detail').imagesLoaded( function() {
       $('#loading').animate({'margin-right': 0},500);
       $('#loading').animate({'margin-top': -2},500,function(){
@@ -198,6 +205,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/a4j.html", function(data){
       $('#detail').html(data);
+      ga('send', 'event', 'page', 'click', 'a4j');
       $('#detail').imagesLoaded( function() {
       $('#loading').animate({'margin-right': 0},500);
       $('#loading').animate({'margin-top': -2},500,function(){
@@ -222,6 +230,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/suave.html", function(data){
       $('#detail').html(data);
+      ga('send', 'event', 'page', 'click', 'suave');
       $('#detail').imagesLoaded( function() {
       $('#loading').animate({'margin-right': 0},500);
       $('#loading').animate({'margin-top': -2},500,function(){
@@ -247,6 +256,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/about.html", function(data){
       $('#detail').html(data);
+      ga('send', 'event', 'page', 'click', 'about');
       $('#detail').imagesLoaded( function() {
       $('#loading').animate({'margin-right': 0},500);
       $('#loading').animate({'margin-top': -2},500,function(){
@@ -271,6 +281,7 @@
     $('#loading').animate({'margin-right':0},10000);
     $.get("partials/currently.html", function(data){
       $('#detail').html(data);
+      ga('send', 'event', 'page', 'click', 'currently');
       $('#detail').imagesLoaded( function() {
       $('#loading').animate({'margin-right': 0},500);
       $('#loading').animate({'margin-top': -2},500,function(){
