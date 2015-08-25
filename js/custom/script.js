@@ -49,6 +49,9 @@
   //Code to Reveal Section
   $('#main > nav > ul li a').click(function(){
     if($(this).data('navsection') === "work"){
+      if(window.innerWidth > 700){
+        $(this).css('text-decoration','underline');
+      }
       if($(this).data('navsection') === "work"){
       if(window.innerWidth <700){
         $('#main > h1').fadeOut(100);
@@ -63,6 +66,13 @@
         $(this).fadeIn(revealer);
         revealer += 250;
       });
+    }
+    else{
+      if(window.innerWidth > 700){
+        $('#main > nav > ul li a').each(function(){
+          $(this).css('text-decoration','none');
+        })
+      }
     }
     
   $('.mobileback').click(function(){
