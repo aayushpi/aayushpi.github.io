@@ -428,10 +428,14 @@ nav > ul li a img {
 }
   .inner blockquote{
     line-height: 1.2;
-    margin-left: 10px;
-    padding-left: 20px;
-    font-size: 1.25em;
-  }
+    margin-left: 5px;
+    padding-left: 15px;
+    font-size: 0.9em;
+  
+    margin-right: 15px;
+}
+
+blockquote {}
   #detail h1 {
     margin: 10px auto 10px auto;
     line-height: 1.1;
