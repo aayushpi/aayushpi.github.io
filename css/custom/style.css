@@ -81,6 +81,23 @@ body{
   margin: 0;
 }
 
+
+
+#resdl{
+    font-family: "atrament-web", sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    background-color: #fce2e0;
+    padding: 20px;
+    float: right;
+    margin: 20px;
+    border-radius: 1px;
+}
+
+#resdl a{
+  color: #2c3e50;
+}
+
 #main h1, #main nav li{
   display: none;
 }
@@ -481,6 +498,13 @@ blockquote {}
     bottom: 0;     right: 0;
     background-color: white;
     width: 100%;
+}
+
+#resdl{
+  font-size: 1.2em;
+  text-align:center;
+  float:none;
+  display:block;
 }
 
 .mobileclose a {
