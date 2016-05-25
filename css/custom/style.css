@@ -38,7 +38,7 @@
   height: 100%;
   width: 6px;
   display: inline-block;
-  
+
   -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
   animation: stretchdelay 1.2s infinite ease-in-out;
 }
@@ -64,15 +64,15 @@
 }
 
 @-webkit-keyframes stretchdelay {
-  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
   20% { -webkit-transform: scaleY(1.0) }
 }
 
 @keyframes stretchdelay {
-  0%, 40%, 100% { 
+  0%, 40%, 100% {
     transform: scaleY(0.4);
     -webkit-transform: scaleY(0.4);
-  }  20% { 
+  }  20% {
     transform: scaleY(1.0);
     -webkit-transform: scaleY(1.0);
   }
@@ -220,13 +220,13 @@ a:hover{
 }
 
 #shadow:after {
-  content: " "; 
-  width: 20px; 
-  height: 80px; 
-  background-color: white; 
-  position: fixed;   
-  top: -22px; 
-  z-index: 0; 
+  content: " ";
+  width: 20px;
+  height: 80px;
+  background-color: white;
+  position: fixed;
+  top: -22px;
+  z-index: 0;
   right: 1px;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -234,6 +234,7 @@ a:hover{
 
 .inner p{
   font-size: 1.5em;
+  line-height: 1.5;
 }
 
 .inner img{
@@ -344,7 +345,7 @@ li .sans {
     margin-right: 1930px;
 }
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
+@media only screen
 and (min-width : 320px)
 and (max-width : 700px) {
 
@@ -415,7 +416,7 @@ nav > ul li a img {
     width: 100%;
     margin: 0;
     padding: 10px 0 10px 0;
-  
+
     display: none;
 }
   #close ul{
@@ -435,20 +436,20 @@ nav > ul li a img {
 
   .inner p, .award, .inner li{
     font-size: 0.9em;
-  
+
     font-weight: 100;
 }
 
   .subhead{
     font-size: 1.2em;
-  
+
 }
   .inner blockquote{
     line-height: 1.2;
     margin-left: 5px;
     padding-left: 15px;
     font-size: 0.9em;
-  
+
     margin-right: 15px;
 }
 
@@ -456,7 +457,7 @@ blockquote {}
   #detail h1 {
     margin: 10px auto 10px auto;
     line-height: 1.1;
-  
+
     font-size: 1.5em;
 }
 #detail.show {
@@ -494,7 +495,7 @@ blockquote {}
 }
 .mobileclose {
     opacity:1;
-    position: fixed;     z-index: 10;     
+    position: fixed;     z-index: 10;
     bottom: 0;     right: 0;
     background-color: white;
     width: 100%;
