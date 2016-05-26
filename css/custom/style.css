@@ -263,6 +263,34 @@ font-weight: lighter;
 font-size: 1.5em;
 font-style: italic;
 }
+.stat-box {
+  max-width: 300px;
+  float: left;
+  margin: 0 30px 30px -20px;
+  padding: 20px;
+  background-color: #FCE2E0;
+  border-radius: 3px;
+  border: 1px solid rgba(240,56,56,0.3)
+}
+
+.stat-box h3 {
+    text-transform: uppercase;
+    font-weight:100;
+    margin: 0;
+    text-align: center;
+    color: #2c3e50;
+    font-size:1.5em;
+}
+
+.stat-box li {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.stat-box ul {
+    padding-left: 20px;
+}
 blockquote span{
   color: #F03838;
   text-transform: uppercase;
@@ -349,7 +377,11 @@ li .sans {
 @media only screen
 and (min-width : 320px)
 and (max-width : 700px) {
-
+.stat-box{
+  max-width: none;
+  float: none;
+  margin: 0;
+  }
 /*NEW STYLES*/
 
 #main > h1 {

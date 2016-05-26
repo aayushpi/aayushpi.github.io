@@ -17,6 +17,7 @@
       "today": "donext",
       "intro": "intro",
       "a4j": "a4j",
+      "vouch": "vouch",
       "vwlive": "vwlive",
       "nike": "nike",
       "about": "about",
@@ -27,12 +28,30 @@
   });
 
   var app_router = new AppRouter;
+  app_router.on('route:vouch', function() {
+      $.get("partials/vouch.html", function(data){
+        $('#detail').html(data);
+        mixpanel.track("Portfolio: Vouch");
+        $('#detail').imagesLoaded( function() {
+        $('body').css('overflow','visible');
+        $('#detail').addClass("show");
+        $('#close ul li').click(function(){
+          var jumper = $(this).data('id');
+          var jump = '*[data-section="' + jumper + '"]';
+          $('html,body').animate({
+            scrollTop: $(jump).offset().top},
+            '500', function(){
+          });
+        });
+        });
+      });
+    });
+
   app_router.on('route:suave', function() {
       $.get("partials/suave.html", function(data){
         $('#detail').html(data);
         mixpanel.track("Portfolio: Suave");
         $('#detail').imagesLoaded( function() {
-        console.log("We're on!")
         $('body').css('overflow','visible');
         $('#detail').addClass("show");
         $('#close ul li').click(function(){
